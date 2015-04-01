@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- container-fluid -->
+	<head>
+		<title>设备管理系统</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="css/uniform.css" />
+		<link rel="stylesheet" href="css/select2.css" />		
+		<link rel="stylesheet" href="css/unicorn.main.css" />
+		<link rel="stylesheet" href="css/mycustom.css" />
+		<link rel="stylesheet" href="css/unicorn.grey.css" class="skin-color" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<body>
+		
+		
+		<div id="header">
+			<h1><a href="./dashboard.html">管理系统</a></h1>		
+		</div>
+		
+		<div id="search">
+			<input type="text" placeholder="请输入搜索内容..." /><button type="submit" class="tip-right" title="Search"><i class="icon-search icon-white"></i></button>
+		</div>
+		<div id="user-nav" class="navbar navbar-inverse">
+            <ul class="nav btn-group">
+                <li class="btn btn-inverse dropdown" id="personInfo"><a title="" href="#" data-toggle="dropdown" data-target="#personInfo" class="dropdown-toggle"><i class="icon icon-user"></i> <span class="text">个人资料</span><b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="sAdd" title="" href="system_user_changePass.html">重置密码</a></li>
+                        <li><a class="sOutbox" title="" href="system_user_check.html">查看个人资料</a></li>
+                        <li><a class="sInbox" title="" href="system_user_saveUI.html">修改个人资料</a></li>
+
+                    </ul>
+                </li>
+                <li class="btn btn-inverse dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">消息</span> <span class="label label-important">5</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="sAdd" title="" href="#">新消息</a></li>
+                    </ul>
+                </li>
+                <li class="btn btn-inverse"><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">注销</span></a></li>
+            </ul>
+        </div>
+            
+		<div id="sidebar">
+			<a href="index.html" class="visible-phone"><i class="icon icon-home"></i> 首页</a>
+			<ul>
+				<li><a href="index.html"><i class="icon icon-home"></i> <span>首页</span></a></li>
+				<li class="active submenu open">
+					<a href="#"><i class="icon-pencil"></i> <span>设备管理</span> <span class="label">3</span></a>
+					<ul>
+						<li class="active"><a href="device_apply.html">设备申请</a></li>
+						<li><a href="device_dealing.html">待办</a></li>
+						<li><a href="device_deploy.html">流程部署</a></li>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a href="#"><i class="icon-comment"></i> <span>内部交流区</span> <span class="label">2</span></a>
+					<ul>
+						<li><a href="forum.html">论坛</a></li>
+						<li><a href="forum_manage.html">论坛管理</a></li>
+					</ul>
+				</li>
+				<li class="submenu" >
+					<a href="#"><i class="icon-wrench"></i> <span>系统设置</span> <span class="label">3</span></a>
+					<ul>
+						<li><a href="system_user.html">用户管理</a></li>
+						<li><a href="system_depart.html">部门管理</a></li>
+						<li class="active"><a href="system_role.html">岗位管理</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html"><i class="icon-user"></i> <span>联系我们</span></a></li>
+			</ul>
+		
+		</div>
+		
+		<div id="style-switcher">
+			<i class="icon-arrow-left icon-white"></i>
+			<span>主题:</span>
+			<a href="#grey" style="background-color: #555555;border-color: #aaaaaa;"></a>
+			<a href="#blue" style="background-color: #2D2F57;"></a>
+			<a href="#red" style="background-color: #673232;"></a>
+		</div>
+		
+		<div id="content">
+			<div id="content-header">
+				<h1>控制台</h1>
+
+			</div>
+			<div id="breadcrumb">
+				<a href="index.html" title="回到主页" class="tip-bottom"><i class="icon-home"></i> 首页</a>
+				<a href="device_apply.html" title="设备申请" class="current">设备申请</a>
+			</div>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="widget-box">
+							<div class="widget-title">
+								<span class="icon">
+									<i class="icon-th"></i>
+								</span>
+								<h5>申请查看</h5>
+							</div>
+							<div class="widget-content nopadding">
+								<dl class="dl-horizontal">
+								  <dt>设备名称</dt>
+								  <dd>桌子损坏</dd>
+								</dl>
+								<dl class="dl-horizontal">
+								  <dt>申请原因</dt>
+								  <dd>没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了没钱买了</dd>
+								</dl>
+								<dl class="dl-horizontal">
+								  <dt>地点 </dt>
+								  <dd>教二楼</dd>
+								</dl>
+								<dl class="dl-horizontal">
+								  <dt>申请备注 </dt>
+								  <dd>准了</dd>
+								</dl>	
+								<dl class="dl-horizontal">
+								  <dt>申请时间 </dt>
+								  <dd>2015-04-05</dd>
+								</dl>	
+								<dl class="dl-horizontal">
+								  <dt>申请状态</dt>
+								  <dd>待处理</dd>
+								</dl>	
+																	
+							</div>
+						</div>
+
+						
+						
+						
+						
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div id="footer" class="span12">
+						2015 &copy; 郑州轻工业学院 </div>
+				</div>
+			</div>
+		</div>
+		
+
+            <script src="js/jquery.min.js"></script>
+            <script src="js/jquery.ui.custom.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.uniform.js"></script>
+            <script src="js/select2.min.js"></script>
+            <script src="js/jquery.dataTables.min.js"></script>
+            <script src="js/unicorn.js"></script>
+            <script src="js/unicorn.tables.js"></script>
+	</body>
+</html>
